@@ -1,0 +1,17 @@
+<div id="title">
+  <h2>
+    Edit Video Details:
+  </h2>
+</div>
+<div class="stuff">
+  <form action="/videos/<%= @video['id'] %>" method="POST">
+    <label>Artist: </label><input class="input" type="text" name="artist" placeholder="artist... " value="<%= @video['artist']%>" autofocus>
+    <label>Title: </label><input class="input" type="text" name="title" placeholder="title... " value="<%= @video['title']%>">
+    <label>Description: </label><textarea class="input" name="description" placeholder="description... "><%= @video['description']%></textarea>
+    <label>Category: </label><input class="input" type="text" name="category" placeholder="category... " value="<%= @video['category']%>">
+    <label>Genre: </label><input class="input" type="text" name="genre" placeholder="genre... " value="<%= @video['genre']%>">
+    <label>URL: </label><input class="input" type="text" name="url" placeholder="url... " value="<%= @video['url']%>">
+
+    <input class="input" type="submit" value="Update Video">
+  </form>
+</div>

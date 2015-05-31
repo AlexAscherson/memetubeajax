@@ -1,0 +1,41 @@
+<div id="title">
+  <h2>
+    Home Page
+  </h2>
+</div>
+<div class=stuff>
+  <h3>All videos:</h3>
+  <table>
+    <thead></thead>
+    <tbody>
+      <% @videos.each do |video| %>
+        <tr>
+          <td>
+            <a href="/videos/<%= video['id'] %>">
+              <%= [video['artist'], video['title']].join(" - ") %>
+            </a>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
+
+<div class=genres>
+  <h3>Genres:</h3>
+  <ul id="genres">
+    <% @genres.each do |genre| %> 
+  <li><a href="/genres/<%= genre['genre'] %>">
+              <%= [genre['genre']].join(" - ") %>
+              </a>
+              </li>
+           <% end %>
+           </ul>
+
+
+
+
+  </div>
+
+

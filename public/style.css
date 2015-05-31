@@ -1,0 +1,204 @@
+body{
+  background-color: #000000;
+  background-image: url("http://p1.pichost.me/640/24/1475729.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20%;
+  background-attachment: fixed;
+  background-size: 150%;
+  color: #CACACA;
+  margin: 30px auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3, nav{
+    font-family: 'Londrina Sketch', cursive;
+}
+
+/* unvisited link */
+a:link {
+  color: #00FF00;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+header{
+/*  font-family: 'Londrina Sketch', cursive;*/
+  font-size: 50px;
+  background-color: black;
+  width: 500px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+h1{
+  width: 500px;
+  text-align: center;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+nav{
+  background-color: black;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  margin-bottom: 25px; 
+}
+
+nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+/*nav ul a{
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
+nav ul li{
+  display: inline-block;
+  margin: 5px auto;
+  min-height: 50px;
+  border: 1px solid #555555;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+
+#home{
+  font-size: 35px;
+  min-width: 100px;
+}
+
+.static{
+  font-size: 22px;
+  width: 100px
+}
+
+.category{
+  font-size: 25px;
+  min-width: 70px;
+}
+
+/* unvisited link */
+#content a:link {
+  color: #CACACA;
+}
+
+/* visited link */
+#content a:visited {
+  color: #CACACA;
+}
+
+/* mouse over link */
+#content a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+#content a:active {
+  color: #0000FF;
+}
+
+#content{
+  background-color: black;
+  padding: 25px;
+  color: #CACACA;
+  border: 1px solid #555555;
+  border-radius: 10px;
+}
+
+#title h2{
+  font-size: 45px;
+  background-color: black;
+  margin: 0px 0px 25px 0px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+.stuff{
+  padding-left: 40px;
+  margin: 0px auto;
+}
+
+#video_page{
+  width: 500px;
+  margin: 0px auto;
+}
+
+#video{
+  display: block;
+  margin: 0 auto;
+}
+
+#details dt{
+  display: inline-block;
+  width: 25%;
+  vertical-align: text-top;
+}
+
+#details dd{
+  display: inline-block;
+  width: 70%;
+  margin: 0px;
+  vertical-align: text-top;
+}
+
+.input{
+  display: block;
+  font-size: 15px;
+  margin: 10px;
+  color: black;
+}
+
+.input:focus{
+  background-color: #FFD4A9;
+}
+
+.button{
+  /*padding: 0px;*/
+}
+
+thead{
+  font-size: 20px;
+}
+
+.top_10_td{
+  text-align: center;
+  vertical-align: text-top;
+  width: 100px;
+}
+

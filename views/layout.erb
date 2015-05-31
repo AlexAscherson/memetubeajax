@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/normalize.css'>
+    <link rel='stylesheet' href='/style.css'>
+    <title>MEME TUBE</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1><a href="/">MEME TUBE</a></h1>
+    </header>
+
+    <!-- generating and displaying the NAV menu -->
+    <nav>
+      <ul>
+        <a href='/videos'><li id="home">HOME</li></a>
+        <a href='/videos/new'><li class="static">Add New Item</li></a>
+      </ul>
+    </nav>
+
+    <div id="container">
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+
+</html>

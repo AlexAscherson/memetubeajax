@@ -1,0 +1,23 @@
+<div id="title">
+  <h2>
+    Home Page
+  </h2>
+</div>
+
+
+<div class=genres>
+  <h3>Genres:</h3>
+  <ul id="genres">
+    <% @videos.each do | video| %> 
+  <li><a href="/videos/<%= video['id'] %>">
+              <%= [video['artist'], video['title']].join(" - ") %>
+              </li>
+           <% end %>
+           </ul>
+
+
+
+
+  </div>
+
+
