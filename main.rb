@@ -27,6 +27,8 @@ end
 get "/genres/:genre" do
   sql = "SELECT * FROM videos WHERE genre='#{params[:genre]}'"
   @videos = run_sql(sql)
+  sql = "SELECT genre FROM videos GROUP BY genre"
+  @genres = run_sql(sql)
   
   if request.xhr?
       # checking if it is an ajax request?
@@ -94,11 +96,15 @@ end
 get "/videos/:id/delete" do
   sql = "DELETE FROM videos where id=#{params[:id]}"
   run_sql(sql)
+  if request.xhr?
+    json [{status: :ok}]
+  else
   redirect to("/videos")
+  end
 end
 
 #######
-# method to pass the sql statements into sql
+# method to pass the sql statements into db
 def run_sql(sql)
   conn = PG.connect(dbname: "videos", host: "localhost")
   begin

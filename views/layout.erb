@@ -18,7 +18,19 @@
       <ul>
         <a href='/videos'><li id="home">HOME</li></a>
         <a href='/videos/new'><li class="static">Add New Item</li></a>
+        <a href='/videos/genres'><li class="dynamic">Genres</li></a>
       </ul>
+  
+   <ul>
+  <% @genres.each do |genre| %> 
+  <li><a href="/genres/<%= genre['genre'] %>">
+              <%= [genre['genre']].join(" - ") %>
+              </a>
+              </li>
+           <% end %>
+           </ul>
+
+
     </nav>
 
     <div id="container">
